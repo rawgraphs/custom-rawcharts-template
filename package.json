@@ -1,0 +1,60 @@
+{
+  "name": "custom-rawcharts-template",
+  "version": "0.0.1",
+  "description": "RAWGRAPHS charts",
+  "jsdelivr": "lib/index.umd.js",
+  "unpkg": "lib/index.umd.js",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.es.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write src",
+    "sandbox": "webpack-dev-server",
+    "prebuild": "rimraf lib",
+    "build": "rollup -c"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "css": "^3.0.0",
+    "d3": "^6.5.0",
+    "d3-contour": "^2.0.0",
+    "d3-gridding": "^0.2.0",
+    "d3-hexbin": "^0.2.2",
+    "d3-sankey": "^0.12.3",
+    "louvain": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@rawgraphs/rawgraphs-core": "^1.0.0-beta.16",
+    "@rollup/plugin-babel": "^5.1.0",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-image": "^2.0.5",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-macros": "^2.8.0",
+    "babel-plugin-preval": "^5.0.0",
+    "css-loader": "^3.6.0",
+    "dsv-loader": "^2.0.0",
+    "file-loader": "^6.1.0",
+    "prettier": "^2.1.2",
+    "raw-loader": "^4.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.21.0",
+    "rollup-plugin-local-resolve": "^1.0.7",
+    "rollup-plugin-string": "^3.0.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "engines": {
+    "npm": ">=7.0.0"
+  }
+}
