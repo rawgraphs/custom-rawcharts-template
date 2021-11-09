@@ -1,9 +1,11 @@
 import babel from '@rollup/plugin-babel'
+import { terser } from 'rollup-plugin-terser'
 import localResolve from 'rollup-plugin-local-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import image from '@rollup/plugin-image'
 import { string } from 'rollup-plugin-string'
+import { rawGraphCss } from './bundler/rollupPluginRAWGraphCss'
 import pkg from './package.json'
 
 const vendors = []
@@ -15,6 +17,15 @@ const vendors = []
   )
   .concat('./styles/base.css')
 
+const UMDVendors = ['d3', '@rawgraphs/rawgraphs-core']
+
+const makeExternalPredicate = (externalArr) => {
+  if (externalArr.length === 0) {
+    return () => false
+  }
+  const pattern = new RegExp(`^(${externalArr.join('|')})($|/)`)
+  return (id) => pattern.test(id)
+}
 
 export default ['esm', 'cjs', 'umd'].map((format) => ({
   input: {
@@ -25,14 +36,17 @@ export default ['esm', 'cjs', 'umd'].map((format) => ({
       dir: 'lib',
       entryFileNames: '[name].[format].js',
       exports: 'named',
-      name: 'rawcharts',
+      name: 'RAWCHART__CUSTOM_CHARTS',
       format,
+      globals: {
+        '@rawgraphs/rawgraphs-core': 'RAWCHART__CORE',
+        d3: 'RAWCHART__VENDOR__D3',
+      },
     },
   ],
-  external: format !== 'umd' ? vendors : ['d3'],
+  external: makeExternalPredicate(format === 'umd' ? UMDVendors : vendors),
   plugins: [
     localResolve(),
-    resolve(),
     commonjs(),
     image(),
     babel({
@@ -40,8 +54,19 @@ export default ['esm', 'cjs', 'umd'].map((format) => ({
       // TODO: Maybe check this
       babelHelpers: 'bundled',
     }),
+    rawGraphCss({
+      include: '**/styles/*.raw.css',
+    }),
     string({
-      include: "**/styles/*.css",
-    })
-  ],
+      include: '**/styles/*.css',
+      exclude: '**/styles/*.raw.css',
+    }),
+  ].concat(
+    format == 'umd'
+      ? [
+          resolve(),
+          // terser()
+        ]
+      : []
+  ),
 }))

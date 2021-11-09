@@ -36,6 +36,13 @@ module.exports = {
           path.resolve(__dirname, "example")
         ],
       },
+      // {
+      //   test: /\.css$/i,
+      //   use: path.resolve('./bundler/webpackRAWGraphCssLoader.js'),
+      //   exclude: [
+      //     path.resolve(__dirname, "example")
+      //   ],
+      // },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
