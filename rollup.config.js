@@ -55,17 +55,17 @@ export default ['esm', 'cjs', 'umd'].map((format) => ({
       babelHelpers: 'bundled',
     }),
     rawGraphCss({
-      include: '**/styles/*.raw.css',
+      include: '**/*.raw.css',
     }),
     string({
-      include: '**/styles/*.css',
-      exclude: '**/styles/*.raw.css',
+      include: '**/*.css',
+      exclude: '**/*.raw.css',
     }),
   ].concat(
     format == 'umd'
       ? [
           resolve(),
-          // terser()
+          terser()
         ]
       : []
   ),
