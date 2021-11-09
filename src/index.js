@@ -1,1 +1,1 @@
-export { default as barchartyeah } from './barchartyeah'
+export { default as hellochart } from './hellochart'
