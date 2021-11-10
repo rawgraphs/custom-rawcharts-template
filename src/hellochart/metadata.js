@@ -2,10 +2,10 @@ import icon from './hellochart.svg'
 import thumbnail from './hellochart_thumb.svg'
 
 export const metadata = {
-  name: 'Hello World Chart',
+  name: 'Hello Custom Chart <3',
   thumbnail,
   icon,
-  id: 'hellopack.hellochart',
+  id: 'awesomePack.hellochart',
   categories: ['hack3r'],
   description:
     'Hello World custom raw chart <3',

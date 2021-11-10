@@ -27,20 +27,20 @@ const makeExternalPredicate = (externalArr) => {
   return (id) => pattern.test(id)
 }
 
-export default ['esm', 'cjs', 'umd'].map((format) => ({
+export default ['esm', 'cjs', 'umd', 'iife'].map((format) => ({
   input: {
-    index: 'src/index.js',
+    index: format === 'iife' ? 'src/inject.js' : 'src/index.js',
   },
   output: [
     {
       dir: 'lib',
       entryFileNames: '[name].[format].js',
       exports: 'named',
-      name: 'RAWCHART__CUSTOM_CHARTS',
+      name: 'myAwsesomeCharts',
       format,
       globals: {
-        '@rawgraphs/rawgraphs-core': 'RAWCHART__CORE',
-        d3: 'RAWCHART__VENDOR__D3',
+        '@rawgraphs/rawgraphs-core': 'rawgraphsCore',
+        d3: 'd3',
       },
     },
   ],
@@ -61,12 +61,5 @@ export default ['esm', 'cjs', 'umd'].map((format) => ({
       include: '**/*.css',
       exclude: '**/*.raw.css',
     }),
-  ].concat(
-    format == 'umd'
-      ? [
-          resolve(),
-          terser()
-        ]
-      : []
-  ),
+  ].concat(['umd', 'iife'].includes(format) ? [resolve(), terser()] : []),
 }))
