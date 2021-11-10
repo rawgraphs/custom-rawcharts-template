@@ -17,7 +17,7 @@ const vendors = []
   )
   .concat('./styles/base.css')
 
-const UMDVendors = ['d3', '@rawgraphs/rawgraphs-core']
+const GlobalVendors = ['d3', '@rawgraphs/rawgraphs-core']
 
 const makeExternalPredicate = (externalArr) => {
   if (externalArr.length === 0) {
@@ -44,7 +44,9 @@ export default ['esm', 'cjs', 'umd', 'iife'].map((format) => ({
       },
     },
   ],
-  external: makeExternalPredicate(format === 'umd' ? UMDVendors : vendors),
+  external: makeExternalPredicate(
+    ['umd', 'iife'].includes(format) ? GlobalVendors : vendors
+  ),
   plugins: [
     localResolve(),
     commonjs(),
