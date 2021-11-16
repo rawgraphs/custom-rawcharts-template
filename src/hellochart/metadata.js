@@ -8,6 +8,6 @@ export const metadata = {
   id: 'giova.hellochart',
   categories: ['hack3r'],
   description: 'Hello World custom RAW Chart ❤️',
-  code: 'https://my-cool-repo.com',
-  tutorial: 'https://my-cool-tutorial.com',
+  code: 'https://giova.fun',
+  tutorial: 'https://giova.fun',
 }

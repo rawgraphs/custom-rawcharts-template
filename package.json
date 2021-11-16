@@ -1,6 +1,6 @@
 {
   "name": "custom-rawcharts-template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "RAWGRAPHS charts",
   "jsdelivr": "lib/index.umd.js",
   "unpkg": "lib/index.umd.js",
