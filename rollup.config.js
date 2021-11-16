@@ -27,9 +27,9 @@ const makeExternalPredicate = (externalArr) => {
   return (id) => pattern.test(id)
 }
 
-export default ['esm', 'cjs', 'umd', 'iife'].map((format) => ({
+export default ['esm', 'cjs', 'umd'].map((format) => ({
   input: {
-    index: format === 'iife' ? 'src/inject.js' : 'src/index.js',
+    index: 'src/index.js',
   },
   output: [
     {
@@ -44,9 +44,7 @@ export default ['esm', 'cjs', 'umd', 'iife'].map((format) => ({
       },
     },
   ],
-  external: makeExternalPredicate(
-    ['umd', 'iife'].includes(format) ? GlobalVendors : vendors
-  ),
+  external: makeExternalPredicate(format === 'umd' ? GlobalVendors : vendors),
   plugins: [
     localResolve(),
     commonjs(),
@@ -63,5 +61,12 @@ export default ['esm', 'cjs', 'umd', 'iife'].map((format) => ({
       include: '**/*.css',
       exclude: '**/*.raw.css',
     }),
-  ].concat(['umd', 'iife'].includes(format) ? [resolve(), terser()] : []),
+  ].concat(
+    format === 'umd'
+      ? [
+          resolve(),
+          terser()
+        ]
+      : []
+  ),
 }))
