@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: #4ba0b1;
+      }
+
+      .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13 {
+        stroke: #fff;
+      }
+
+      .cls-7 {
+        fill: #5e4fa2;
+      }
+
+      .cls-8 {
+        fill: #e1524a;
+      }
+
+      .cls-9 {
+        fill: #a0d9a3;
+      }
+
+      .cls-10 {
+        fill: #9e0142;
+      }
+
+      .cls-2 {
+        stroke: #5e4fa2;
+      }
+
+      .cls-11 {
+        fill: #fba35e;
+      }
+
+      .cls-12 {
+        fill: #ebf7a6;
+      }
+
+      .cls-3 {
+        stroke: #fba35e;
+      }
+
+      .cls-13 {
+        fill: #fee89a;
+      }
+
+      .cls-4 {
+        stroke: #ebf7a6;
+      }
+
+      .cls-5 {
+        stroke: #e1524a;
+      }
+
+      .cls-14 {
+        font-family: Helvetica, Helvetica;
+        font-size: 10px;
+        isolation: isolate;
+      }
+
+      .cls-15 {
+        fill: none;
+        stroke: #000;
+      }
+    </style>
+  </defs>
+  <rect id="backgorund" class="cls-1" y="0" width="320" height="160"/>
+  <g id="axis">
+    <g transform="translate(0,143)">
+      <path class="cls-15" d="M20.5,150v-5.5H319.5v5.5"/>
+      <g transform="translate(0.5,0)">
+        <line class="cls-15" x1="20.5" y1="144" x2="20.5" y2="150"/>
+        <text class="cls-14" transform="translate(17.71924 160.09998)"><tspan x="0" y="0">0</tspan></text>
+      </g>
+      <g transform="translate(30.5,0)">
+        <line class="cls-15" x1="50.5" y1="144" x2="50.5" y2="150"/>
+        <text class="cls-14" transform="translate(44.93848 160.09998)"><tspan x="0" y="0">10</tspan></text>
+      </g>
+      <g transform="translate(60.5,0)">
+        <line class="cls-15" x1="80.5" y1="144" x2="80.5" y2="150"/>
+        <text class="cls-14" transform="translate(74.93848 160.09998)"><tspan x="0" y="0">20</tspan></text>
+      </g>
+      <g transform="translate(90.5,0)">
+        <line class="cls-15" x1="110.5" y1="144" x2="110.5" y2="150"/>
+        <text class="cls-14" transform="translate(104.93848 160.09998)"><tspan x="0" y="0">30</tspan></text>
+      </g>
+      <g transform="translate(120.5,0)">
+        <line class="cls-15" x1="140.5" y1="144" x2="140.5" y2="150"/>
+        <text class="cls-14" transform="translate(134.93848 160.09998)"><tspan x="0" y="0">40</tspan></text>
+      </g>
+      <g transform="translate(150.5,0)">
+        <line class="cls-15" x1="170.5" y1="144" x2="170.5" y2="150"/>
+        <text class="cls-14" transform="translate(164.93848 160.09998)"><tspan x="0" y="0">50</tspan></text>
+      </g>
+      <g transform="translate(179.5,0)">
+        <line class="cls-15" x1="199.5" y1="144" x2="199.5" y2="150"/>
+        <text class="cls-14" transform="translate(193.93848 160.09998)"><tspan x="0" y="0">60</tspan></text>
+      </g>
+      <g transform="translate(209.5,0)">
+        <line class="cls-15" x1="229.5" y1="144" x2="229.5" y2="150"/>
+        <text class="cls-14" transform="translate(223.93848 160.09998)"><tspan x="0" y="0">70</tspan></text>
+      </g>
+      <g transform="translate(239.5,0)">
+        <line class="cls-15" x1="259.5" y1="144" x2="259.5" y2="150"/>
+        <text class="cls-14" transform="translate(253.93848 160.09998)"><tspan x="0" y="0">80</tspan></text>
+      </g>
+      <g transform="translate(269.5,0)">
+        <line class="cls-15" x1="289.5" y1="144" x2="289.5" y2="150"/>
+        <text class="cls-14" transform="translate(283.93848 160.09998)"><tspan x="0" y="0">90</tspan></text>
+      </g>
+      <g transform="translate(299.5,0)">
+        <line class="cls-15" x1="319.5" y1="144" x2="319.5" y2="150"/>
+      </g>
+    </g>
+    <g>
+      <path class="cls-15" d="M14,144.5h6.5V1.5h-6.5"/>
+      <g transform="translate(0,143.5)">
+        <line class="cls-15" x1="20" y1="144.5" x2="14" y2="144.5"/>
+        <text class="cls-14" transform="translate(5.43848 147.70001)"><tspan x="0" y="0">0</tspan></text>
+      </g>
+      <g transform="translate(0,127.5)">
+        <line class="cls-15" x1="20" y1="128.5" x2="14" y2="128.5"/>
+        <text class="cls-14" transform="translate(-.12305 131.70001)"><tspan x="0" y="0">10</tspan></text>
+      </g>
+      <g transform="translate(0,111.5)">
+        <line class="cls-15" x1="20" y1="112.5" x2="14" y2="112.5"/>
+        <text class="cls-14" transform="translate(-.12305 115.70001)"><tspan x="0" y="0">20</tspan></text>
+      </g>
+      <g transform="translate(0,95.5)">
+        <line class="cls-15" x1="20" y1="96.5" x2="14" y2="96.5"/>
+        <text class="cls-14" transform="translate(-.12305 99.70001)"><tspan x="0" y="0">30</tspan></text>
+      </g>
+      <g transform="translate(0,79.5)">
+        <line class="cls-15" x1="20" y1="80.5" x2="14" y2="80.5"/>
+        <text class="cls-14" transform="translate(-.12305 83.70001)"><tspan x="0" y="0">40</tspan></text>
+      </g>
+      <g transform="translate(0,64.5)">
+        <line class="cls-15" x1="20" y1="65.5" x2="14" y2="65.5"/>
+        <text class="cls-14" transform="translate(-.12305 68.70001)"><tspan x="0" y="0">50</tspan></text>
+      </g>
+      <g transform="translate(0,48.5)">
+        <line class="cls-15" x1="20" y1="49.5" x2="14" y2="49.5"/>
+        <text class="cls-14" transform="translate(-.12305 52.70001)"><tspan x="0" y="0">60</tspan></text>
+      </g>
+      <g transform="translate(0,32.5)">
+        <line class="cls-15" x1="20" y1="33.5" x2="14" y2="33.5"/>
+        <text class="cls-14" transform="translate(-.12305 36.70001)"><tspan x="0" y="0">70</tspan></text>
+      </g>
+      <g transform="translate(0,16.5)">
+        <line class="cls-15" x1="20" y1="17.5" x2="14" y2="17.5"/>
+        <text class="cls-14" transform="translate(-.12305 20.70001)"><tspan x="0" y="0">80</tspan></text>
+      </g>
+      <g transform="translate(0,0.5)">
+        <line class="cls-15" x1="20" y1="1.5" x2="14" y2="1.5"/>
+      </g>
+    </g>
+  </g>
+  <circle class="cls-4" cx="50.5" cy="112.5" r="16"/>
+  <rect class="cls-3" x="80.73422" y="46.56216" width="33.97457" height="33.97457" transform="translate(73.55821 -50.48633) rotate(45)"/>
+  <polygon class="cls-5" points="177.50362 104.72659 202.24373 86.75185 192.79385 57.66811 162.2134 57.66811 152.76351 86.75185 177.50362 104.72659"/>
+  <polygon class="cls-2" points="282.9192 52.32274 295.18872 69.08321 274.53897 66.83773 266.15873 85.84368 257.77849 66.83773 237.12874 69.08321 249.39826 52.32274 237.12874 35.56227 257.77849 37.80775 266.15873 18.8018 274.53897 37.80775 295.18872 35.56227 282.9192 52.32274"/>
+  <rect class="cls-12" x="22.5" y="1.5" width="16" height="16"/>
+  <rect class="cls-13" x="38.5" y="1.5" width="16" height="16"/>
+  <rect class="cls-11" x="54.5" y="1.5" width="16" height="16"/>
+  <rect class="cls-8" x="70.5" y="1.5" width="16" height="16"/>
+  <rect class="cls-10" x="86.5" y="1.5" width="16" height="16"/>
+  <rect class="cls-7" x="102.5" y="1.5" width="16" height="16"/>
+  <rect class="cls-6" x="118.5" y="1.5" width="16" height="16"/>
+  <rect class="cls-9" x="134.5" y="1.5" width="16" height="16"/>
+</svg>

@@ -1,5 +1,5 @@
-import thumbnail from './gengar.jpg'
-import icon from './gengar_small.png'
+import thumbnail from './template_thumb.svg'
+import icon from './template_icon.svg'
 
 export const metadata = {
   name: 'Hello World 🚀',
