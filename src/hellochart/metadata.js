@@ -5,9 +5,9 @@ export const metadata = {
   name: 'Hello World 🚀',
   thumbnail,
   icon,
-  id: 'giova.hellochart',
+  id: 'customrawcharts.hello',
   categories: ['hack3r'],
   description: 'Hello World custom RAW Chart ❤️',
-  code: 'https://giova.fun',
-  tutorial: 'https://giova.fun',
+  code: 'https://rawgraphs.io',
+  tutorial: 'https://rawgraphs.io',
 }
