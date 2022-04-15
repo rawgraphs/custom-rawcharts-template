@@ -1,3 +1,4 @@
+import replace from '@rollup/plugin-replace'
 import babel from '@rollup/plugin-babel'
 import { terser } from 'rollup-plugin-terser'
 import localResolve from 'rollup-plugin-local-resolve'
@@ -46,14 +47,18 @@ export default ['esm', 'cjs', 'umd'].map((format) => ({
   ],
   external: makeExternalPredicate(format === 'umd' ? GlobalVendors : vendors),
   plugins: [
+    replace({
+      'process.env.NODE_ENV': JSON.stringify('production'),
+      preventAssignment: true,
+    }),
     localResolve(),
-    commonjs(),
-    image(),
+    commonjs({ include: /node_modules/ }),
     babel({
       exclude: 'node_modules/**',
-      // TODO: Maybe check this
       babelHelpers: 'bundled',
+      presets: ['@babel/preset-env', '@babel/preset-react'],
     }),
+    image(),
     rawGraphCss({
       include: '**/*.raw.css',
     }),
