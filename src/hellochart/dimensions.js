@@ -4,6 +4,5 @@ export const dimensions = [
     name: 'Name',
     validTypes: ['string'],
     required: true,
-    operation: 'get',
   },
 ]
