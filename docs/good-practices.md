@@ -4,11 +4,11 @@ This page aims at collecting some basic principles behind the creation of new ch
 
 ## Legends
 
-Legends can be created using the [legend module]() in rawgraphs-core.
+Legends can be created using the [legend module](https://rawgraphs.github.io/rawgraphs-core/docs/chart-utilities#legends) in rawgraphs-core.
 
 The legend should be added by extending the artboard: if the user set a width of 800 px, and the legend width is 200 px, the total arboard size should be 1000px.
 
-You can see [how we handle them in buble](https://github.com/rawgraphs/rawgraphs-charts/blob/master/src/bubblechart/render.js#L224) chart as example.
+You can see [how we handle them in bubble chart](https://github.com/rawgraphs/rawgraphs-charts/blob/master/src/bubblechart/render.js#L224) as example.
 
 All the options related to legends should be contained in the "Artboard" panel.
 
