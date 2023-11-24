@@ -1,5 +1,5 @@
 export const metadata = {
-  name: 'emty chart',
+  name: 'empty chart',
   id: 'rawgraphs.emptychart',
   // thumbnail,
   // icon,

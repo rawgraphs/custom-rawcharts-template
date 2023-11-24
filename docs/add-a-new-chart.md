@@ -126,14 +126,18 @@ and we want to obtain the following dataset:
 In the `mapping.js` file we should write:
 
 ```javascript
-export const mapData = {
-  x: 'get',
-  y: 'get',
-  color: 'get',
+export const mapData = function (data, mapping, dataTypes, dimensions) {
+  
+
+  return data.map((d) => ({
+    x: d[mapping.x.value],
+    y: d[mapping.y.value],
+    color: d[mapping.color.value],
+  }))
 }
 ```
 
-For more elaborate kind of mapping, plese read the [API documentation]().
+You can use a declarative approach for simple / standard transformation (e.g. just changing the name of a column). For more information on declarative mapping, plese read the [API documentation](https://rawgraphs.github.io/rawgraphs-core/docs/declarative-mapping).
 
 At this point, you can start to test your chart in the sandbox, see the section [Test the chart in the sandbox](#test-the-chart-in-the-sandbox) if you prefer to see live the results of your operations.
 
